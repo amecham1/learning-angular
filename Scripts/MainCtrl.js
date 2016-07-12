@@ -1,6 +1,6 @@
 angular
 .module("avengersApp")
-.controller("MainCtrl", function($scope){
+.controller("MainCtrl", function($scope, dataService){
 
 
 
@@ -156,8 +156,15 @@ var teamAvengers = [
         }
     }
 ];
-$scope.avengers = teamAvengers;
+$scope.avengers = teamAvengers
 
 
 
 }); //end of main controller
+
+.service("dataService",function(){
+
+
+
+
+}); //end of dataservice
